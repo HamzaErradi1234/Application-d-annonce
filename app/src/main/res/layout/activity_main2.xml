@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Champ Titre -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Titre (*)" />
+
+    <EditText
+        android:id="@+id/editTextTitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez le titre de l'annonce"
+        android:inputType="text" />
+
+    <!-- Champ Catégorie (Spinner) -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Catégorie (*)" />
+
+    <Spinner
+        android:id="@+id/spinnerCategorie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Champ Secteur (Spinner) -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Secteur (*)" />
+
+    <Spinner
+        android:id="@+id/spinnerSecteur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Champ Type de contrat -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type de contrat" />
+
+    <EditText
+        android:id="@+id/editTextTypeContrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez le type de contrat (optionnel)"
+        android:inputType="text" />
+
+    <!-- Champ Description -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description (*)" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez une description de l'annonce"
+        android:inputType="textMultiLine"
+        android:minLines="3" />
+
+    <!-- Champ Ville (Spinner) -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ville (*)" />
+
+    <Spinner
+        android:id="@+id/spinnerVille"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Bouton Suivant -->
+    <Button
+        android:id="@+id/buttonSuivant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#081D95"
+        android:text="Suivant" />
+</LinearLayout>

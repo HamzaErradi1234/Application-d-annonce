@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:padding="16dp"
+    android:background="#03A9F4"
+        tools:context=".MainActivity"
+        tools:ignore="ExtraText">
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#03A9F4"
+            android:paddingLeft="100dp"
+            android:text="Connexion"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textViewEmailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:text="E-mail:"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewEmailLabel"
+            android:layout_marginTop="7dp"
+            android:width="100dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Entrez votre e-mail"
+            android:inputType="textEmailAddress" />
+        <TextView
+            android:id="@+id/textViewPasswordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEmail"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:text="Mot de passe:"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewPasswordLabel"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Entrez votre mot de passe"
+            android:inputType="textPassword" />
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPassword"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="16dp"
+            android:width="800dp"
+            android:backgroundTint="#8BC34A"
+            android:hapticFeedbackEnabled="true"
+            android:text="Se connecter"
+            android:clickable="true"
+            android:onClick="openSecondActivity2"
+            app:cornerRadius="7dp"
+            app:strokeColor="#CDDC39"
+           />
+        <CheckBox
+            android:id="@+id/checkBoxRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonLogin"
+            android:layout_alignEnd="@+id/textViewForgotPassword"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="-64dp"
+            android:text="Garder ma session active" />
+        <TextView
+            android:id="@+id/textViewForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonLogin"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="16dp"
+            android:text="Mot de passe oublié?" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/checkBoxRememberMe"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="-104dp"
+            android:src="@drawable/ou" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:text="Vous n'avez encore de compte ?"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_marginBottom="-25dp"
+           />
+    <TextView
+        android:id="@+id/textViewLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inscrivez-vous"
+        android:padding="50dp"
+        android:textColor="@color/link_color"
+        android:clickable="true"
+        android:onClick="openSecondActivity"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginBottom="-100dp"/>
+    </RelativeLayout>
+
+
